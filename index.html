@@ -147,8 +147,8 @@
        
             let btn = document.getElementById("noButton");
             btn.addEventListener("mouseover", function(){
-            let X = Math.floor(Math.random(0, 720) * window.innerHeight );
-            let Y = Math.floor(Math.random(0, 720) * window.innerHeight);
+            let X = Math.floor(Math.random() * window.innerHeight );
+            let Y = Math.floor(Math.random() * window.innerHeight);
             btn.style.position = "absolute"
             if (X >= 720)
             {
