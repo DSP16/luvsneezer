@@ -146,16 +146,14 @@
         }
 
        
-            let btn = document.getElementById("noButton");
-            btn.addEventListener("mouseover", function(){
-            let X = Math.floor(Math.random() * window.innerHeight );
-            let Y = Math.floor(Math.random() * window.innerHeight);
-            btn.style.position = "absolute"
-            
+         let btn = document.getElementById("noButton");
+         btn.addEventListener("mouseover", function() {
+            let X = Math.floor(Math.random() * (document.documentElement.clientWidth - btn.offsetWidth));
+            let Y = Math.floor(Math.random() * (document.documentElement.clientHeight - btn.offsetHeight));
+            btn.style.position = "fixed";
             btn.style.left = X + "px";
-            btn.style.top = Y + "px"; 
-           
-        })
+            btn.style.top = Y + "px";
+            });
 
         function yesAlert(){   
            
